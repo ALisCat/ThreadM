@@ -1,0 +1,24 @@
+server:
+  port: 9090
+
+spring:
+  datasource:
+    druid:
+      url: jdbc:mysql://yourip/yourdatabase
+      username: yourusername
+      password: yourpassword
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+
